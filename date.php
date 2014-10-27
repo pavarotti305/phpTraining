@@ -11,46 +11,12 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        $months = array('Janvier','Fevrier','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Decembre');
-        if (date('m')== 1) {
-            echo 'Janvier';  
-        }
-        elseif (date('m')== 2) {
-            echo 'Fevrier';
-        }
-        elseif (date('m')== 3) {
-            echo 'Mars';
-        }
-        elseif (date('m')== 4) {
-            echo 'Avril';
-        }
-        elseif (date('m')== 5) {
-            echo 'Mai';
-        }
-        elseif (date('m')== 6) {
-            echo 'Juin';
-        }
-        elseif (date('m')== 7) {
-            echo 'Juillet';
-        }
-        elseif (date('m')== 8) {
-            echo 'Août';
-        }
-        elseif (date('m')== 9) {
-            echo 'Septembre';
-        }
-        elseif (date('m')== 10) {
-            echo $months[9];
-        }
-         elseif (date('m')== 11) {
-            echo 'Novembre';
-        }
-         elseif (date('m')== 12) {
-            echo 'Decembre';
-        }
- else {
-            echo 'Veuillez saisir un mois valable';
- }
+        $months = array((date('m')== 1)=>'Janvier',(date('m')== 2)=>'Fevrier',
+            (date('m')== 3)=>'Mars',(date('m')== 4)=>'Avril',(date('m')== 5)=>'Mai',
+            (date('m')== 6)=>'Juin',(date('m')== 7)=>'Juillet',(date('m')== 8)=>'Août',
+            (date('m')== 9)=>'Septembre',(date('m')== 10)=>'Octobre',(date('m')== 11)=>'Novembre',
+            (date('m')== 12)=>'Decembre');
+        
         ?>
     </body>
 </html>
